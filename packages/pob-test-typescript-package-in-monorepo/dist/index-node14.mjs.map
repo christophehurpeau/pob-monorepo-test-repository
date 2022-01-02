@@ -1,1 +1,1 @@
-{"version":3,"file":"index-node14.mjs","sources":["../src/index.ts"],"sourcesContent":["import name from 'pob-test-package-in-monorepo';\n\nexport default `Hello ${name}`;\n"],"names":["name"],"mappings":";;AAEA,cAAgB,SAAQA,IAAK,EAA7B;;;;"}
+{"version":3,"file":"index-node14.mjs","sources":["../src/index.ts"],"sourcesContent":["import name from 'pob-test-package-in-monorepo';\n\nexport default `Hello ${name}!`;\n"],"names":["name"],"mappings":";;AAEA,cAAgB,SAAQA,IAAK,GAA7B;;;;"}
