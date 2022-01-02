@@ -1,3 +1,4 @@
 {
-  "plugins": ["node-workspace"]
+  "plugins": ["node-workspace"],
+  "release-as": "1.0.0"
 }
