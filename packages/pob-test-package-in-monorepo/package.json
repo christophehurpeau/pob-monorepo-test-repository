@@ -1,0 +1,34 @@
+{
+  "name": "pob-test-package-in-monorepo",
+  "version": "1.0.0-pre",
+  "description": "test pob",
+  "keywords": [],
+  "author": "Christophe Hurpeau <christophe@hurpeau.com> (https://christophe.hurpeau.com)",
+  "license": "ISC",
+  "type": "module",
+  "engines": {
+    "node": "^14.13.1 || >=16.0.0"
+  },
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "yarn run build:definitions",
+    "build:definitions": "tsc --lib esnext --noEmit --skipLibCheck ./lib/index.d.ts",
+    "lint": "yarn run lint:eslint",
+    "lint:eslint": "cd ../.. && yarn run eslint --report-unused-disable-directives --resolve-plugins-relative-to . --quiet packages/pob-test-package-in-monorepo"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "singleQuote": true,
+    "arrowParens": "always"
+  },
+  "pob": {},
+  "devDependencies": {
+    "typescript": "4.5.4"
+  }
+}

@@ -15,7 +15,10 @@
       "documentation": true,
       "typescript": true,
       "eslint": true,
-      "packageNames": []
+      "packageNames": [
+        "pob-test-package-in-monorepo",
+        "pob-test-typescript-package-in-monorepo"
+      ]
     }
   }
 }

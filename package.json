@@ -14,7 +14,7 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "undefined && yarn run build:definitions && yarn run generate:docs",
+    "build": "yarn workspaces foreach --parallel --topological-dev -Av run build && yarn run build:definitions && yarn run generate:docs",
     "build:definitions": "tsc -b tsconfig.build.json",
     "checks": "node scripts/check-packages.js",
     "generate:api": "typedoc --tsconfig tsconfig.doc.json",
@@ -25,7 +25,8 @@
     "lint:prettier": "prettier --check .",
     "postinstall": "pob-root-postinstall",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
-    "tsc": "tsc -b"
+    "tsc": "tsc -b",
+    "watch": "yarn workspaces foreach --parallel --jobs unlimited --interlaced --exclude \"*-example\" -Av run watch"
   },
   "prettier": {
     "trailingComma": "all",

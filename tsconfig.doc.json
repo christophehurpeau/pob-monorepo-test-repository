@@ -16,10 +16,16 @@
     "esModuleInterop": true
   },
 
-  "references": [],
+  "references": [
+    {
+      "path": "packages/pob-test-typescript-package-in-monorepo/tsconfig.build.json"
+    }
+  ],
 
   "typedocOptions": {
-    "entryPoints": [],
+    "entryPoints": [
+      "packages/pob-test-typescript-package-in-monorepo/src/index.ts"
+    ],
     "exclude": ["**/*.test.ts", "**/__tests__/**"],
     "readme": "README.md",
     "out": "docs",
