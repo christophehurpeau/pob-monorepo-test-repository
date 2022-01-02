@@ -1,0 +1,21 @@
+{
+  "pob": {
+    "project": {
+      "type": "lib",
+      "packageManager": "yarn",
+      "yarnNodeLinker": "node-modules"
+    },
+    "renovate": {
+      "enable": true
+    },
+    "monorepo": {
+      "ci": true,
+      "testing": true,
+      "codecov": true,
+      "documentation": true,
+      "typescript": true,
+      "eslint": true,
+      "packageNames": []
+    }
+  }
+}
