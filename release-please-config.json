@@ -1,6 +1,5 @@
 {
   "plugins": ["node-workspace"],
-  "release-as": "1.0.0",
   "packages": {
     "packages/pob-test-package-in-monorepo": {},
     "packages/pob-test-typescript-package-in-monorepo": {}
