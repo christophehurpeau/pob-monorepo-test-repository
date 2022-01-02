@@ -18,12 +18,13 @@
     "build:definitions": "tsc -b tsconfig.build.json",
     "checks": "node scripts/check-packages.js",
     "generate:api": "typedoc --tsconfig tsconfig.doc.json",
-    "generate:docs": "rm -Rf docs ; yarn run generate:api ; touch docs/.nojekyll && yarn run generate:test-coverage",
+    "generate:docs": "rm -Rf docs ; yarn run generate:api ; touch docs/.nojekyll",
+    "generate:test-coverage": "rm -Rf docs/coverage/ ; NODE_ENV=production BABEL_ENV=test NODE_OPTIONS=--experimental-vm-modules jest --coverage --coverageReporters=pob-lcov-reporter --coverageDirectory=docs/coverage/",
     "lint": "yarn run lint:prettier && yarn run lint:eslint",
     "lint:eslint": "eslint --report-unused-disable-directives --resolve-plugins-relative-to . --quiet .",
     "lint:prettier": "prettier --check .",
     "postinstall": "pob-root-postinstall",
-    "test": "yarn workspaces foreach --parallel -Av run test",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "tsc": "tsc -b"
   },
   "prettier": {
@@ -34,6 +35,17 @@
   "commitlint": {
     "extends": [
       "@pob/commitlint-config"
+    ]
+  },
+  "jest": {
+    "cacheDirectory": "./node_modules/.cache/jest",
+    "testEnvironment": "node",
+    "testMatch": [
+      "<rootDir>/packages/*/(src|lib)/**/__tests__/**/*.(ts|js|cjs|mjs)",
+      "<rootDir>/packages/*/(src|lib)/**/*.test.(ts|js|cjs|mjs)"
+    ],
+    "extensionsToTreatAsEsm": [
+      ".ts"
     ]
   },
   "devDependencies": {

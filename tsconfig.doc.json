@@ -1,20 +1,29 @@
 {
-  "extends": "./tsconfig.json",
+  "include": ["packages/*/src/**/*.ts"],
+
+  "exclude": [
+    "**/node_modules/**",
+    "**/src/**/*.test.ts",
+    "**/src/**/__tests__/**"
+  ],
 
   "compilerOptions": {
-    "rootDirs": [],
-    "rootDir": "src",
-    "isolatedModules": false
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["dom", "esnext"],
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true
   },
+
+  "references": [],
 
   "typedocOptions": {
     "entryPoints": [],
-    "exclude": ["src/**/*.test.ts", "src/**/__tests__/**"],
+    "exclude": ["**/*.test.ts", "**/__tests__/**"],
     "readme": "README.md",
     "out": "docs",
     "excludePrivate": true,
     "gitRevision": "master"
-  },
-
-  "exclude": ["src/**/*.test.ts", "src/**/__tests__/**"]
+  }
 }
