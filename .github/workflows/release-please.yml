@@ -13,8 +13,7 @@ jobs:
         id: release
         with:
           token: ${{ secrets.GH_TOKEN }}
-          release-type: node
-          package-name: release-please-action
+          command: manifest
 
       # publish:
       - uses: actions/checkout@v2
