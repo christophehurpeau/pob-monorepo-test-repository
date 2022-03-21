@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/christophehurpeau/pob-monorepo-test-repository/compare/pob-test-package-in-monorepo-v1.0.0...pob-test-package-in-monorepo-v1.1.0) (2022-03-21)
+
+
+### Features
+
+* **pob-test-package-in-monorepo:** update name to John ([bca503e](https://github.com/christophehurpeau/pob-monorepo-test-repository/commit/bca503e7003ed4f8f51706c056d66d888727a8a0))
+
 ## 1.0.0 (2022-01-02)
 
 
@@ -16,5 +23,3 @@
 
 
 ### Dependencies
-
-

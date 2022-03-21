@@ -1,5 +1,11 @@
 # Changelog
 
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * pob-test-package-in-monorepo bumped from ^1.0.0 to ^1.1.0
+
 ## 1.0.0 (2022-01-02)
 
 
