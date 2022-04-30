@@ -58,7 +58,7 @@
     "@pob/lerna-light": "5.1.0",
     "@pob/root": "6.17.0",
     "@types/jest": "27.4.1",
-    "check-package-dependencies": "3.0.0",
+    "check-package-dependencies": "3.6.0",
     "eslint": "8.14.0",
     "jest": "28.0.3",
     "pob-babel": "33.1.0",
