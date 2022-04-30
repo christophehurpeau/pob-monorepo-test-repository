@@ -1,1 +1,1 @@
-export default 'John';
+export default 'Jane';
