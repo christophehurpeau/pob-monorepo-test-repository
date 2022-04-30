@@ -6,6 +6,20 @@
   * dependencies
     * pob-test-package-in-monorepo bumped from ^1.0.0 to ^1.1.0
 
+## [1.1.0](https://github.com/christophehurpeau/pob-monorepo-test-repository/compare/pob-test-typescript-package-in-monorepo-v1.0.0...pob-test-typescript-package-in-monorepo-v1.1.0) (2022-04-30)
+
+
+### Features
+
+* update name ([f4bb26e](https://github.com/christophehurpeau/pob-monorepo-test-repository/commit/f4bb26e307e5ca617bdc30e25159be616825771b))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * pob-test-package-in-monorepo bumped from ^1.1.0 to ^1.2.0
+
 ## 1.0.0 (2022-01-02)
 
 
