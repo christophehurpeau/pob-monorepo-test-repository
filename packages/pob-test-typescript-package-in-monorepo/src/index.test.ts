@@ -1,5 +1,5 @@
 import hello from '.';
 
 test('hello', () => {
-  expect(hello).toBe('Hello Jane!');
+  expect(hello).toBe('Hello John!');
 });
