@@ -11,15 +11,15 @@ jobs:
         node-version: [14.x, 16.x]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
 
       - name: Cache dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: |
             .yarn/unplugged
@@ -43,27 +43,22 @@ jobs:
         run: yarn run lint:prettier
         if: startsWith(matrix.node-version, '16.')
 
-      - name: Eslint
-        run: yarn run lint:eslint
-        if: startsWith(matrix.node-version, '16.')
-
       - name: Typescript
         run: yarn run tsc
         if: startsWith(matrix.node-version, '16.')
 
-      - name: Test
-        run: yarn run test
-        env:
-          CI: true
+      - name: Eslint
+        run: yarn run lint:eslint
+        if: startsWith(matrix.node-version, '16.')
 
-      - name: Documentation
-        run: yarn run generate:docs
+      - name: Generate Test Coverage
+        run: yarn run test --coverage --coverageReporters=json --coverageReporters=text
         if: startsWith(matrix.node-version, '16.')
         env:
           CI: true
 
       - name: Send results to codecov
-        uses: codecov/codecov-action@v2
+        uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
         if: startsWith(matrix.node-version, '16.')
