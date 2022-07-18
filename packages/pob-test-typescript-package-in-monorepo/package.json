@@ -52,7 +52,7 @@
     "pob-test-package-in-monorepo": "^2.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.18.6",
+    "@babel/core": "7.18.9",
     "pob-babel": "33.1.0",
     "typescript": "4.7.4"
   }
