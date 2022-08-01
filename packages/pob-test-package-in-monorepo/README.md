@@ -8,6 +8,9 @@
 
 <p align="center">
   <a href="https://npmjs.org/package/pob-test-package-in-monorepo"><img src="https://img.shields.io/npm/v/pob-test-package-in-monorepo.svg?style=flat-square"></a>
+  <a href="https://npmjs.org/package/pob-test-package-in-monorepo"><img src="https://img.shields.io/npm/dw/pob-test-package-in-monorepo.svg?style=flat-square"></a>
+  <a href="https://npmjs.org/package/pob-test-package-in-monorepo"><img src="https://img.shields.io/node/v/pob-test-package-in-monorepo.svg?style=flat-square"></a>
+  <a href="https://npmjs.org/package/pob-test-package-in-monorepo"><img src="https://img.shields.io/npm/types/pob-test-package-in-monorepo.svg?style=flat-square"></a>
 </p>
 
 ## Install

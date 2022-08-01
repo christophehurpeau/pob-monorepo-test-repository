@@ -1,5 +1,5 @@
 CHANGELOG.md
-/.release-please-manifest.json
 /docs
 /.yarn/**/*
+/.release-please-manifest.json
 /packages/*/dist
