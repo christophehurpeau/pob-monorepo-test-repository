@@ -7509,7 +7509,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"pob-test-package-in-monorepo@^2.0.0, pob-test-package-in-monorepo@workspace:packages/pob-test-package-in-monorepo":
+"pob-test-package-in-monorepo@^3.0.0, pob-test-package-in-monorepo@workspace:packages/pob-test-package-in-monorepo":
   version: 0.0.0-use.local
   resolution: "pob-test-package-in-monorepo@workspace:packages/pob-test-package-in-monorepo"
   dependencies:
@@ -7523,7 +7523,7 @@ __metadata:
   dependencies:
     "@babel/core": 7.18.9
     pob-babel: 33.5.0
-    pob-test-package-in-monorepo: ^2.0.0
+    pob-test-package-in-monorepo: ^3.0.0
     typescript: 4.7.4
   languageName: unknown
   linkType: soft
