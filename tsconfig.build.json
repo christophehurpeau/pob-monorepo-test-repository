@@ -1,8 +1,0 @@
-{
-  "files": [],
-  "references": [
-    {
-      "path": "packages/pob-test-typescript-package-in-monorepo/tsconfig.build.json"
-    }
-  ]
-}

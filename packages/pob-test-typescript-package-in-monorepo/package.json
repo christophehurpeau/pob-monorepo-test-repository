@@ -6,42 +6,35 @@
   "license": "ISC",
   "type": "module",
   "engines": {
-    "node": "^14.13.1 || >=16.0.0"
+    "node": ">=16.0.0"
   },
-  "main": "./dist/index-node14.mjs",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/index-node16.mjs",
+  "types": "./dist/definitions/index.d.ts",
   "exports": {
     "./package.json": "./package.json",
     ".": {
       "node": {
-        "import": "./dist/index-node14.mjs"
+        "import": "./dist/index-node16.mjs"
       }
     }
   },
-  "module:node": "./dist/index-node14.mjs",
   "sideEffects": false,
   "scripts": {
     "build": "yarn clean:build && rollup --config rollup.config.mjs && yarn run build:definitions",
-    "build:definitions": "tsc -p tsconfig.build.json",
+    "build:definitions": "tsc -p",
     "clean": "yarn clean:build",
-    "clean:build": "rm -Rf dist",
+    "clean:build": "pob-babel-clean-out dist",
     "lint": "yarn run lint:eslint",
-    "lint:eslint": "cd ../.. && yarn run eslint --report-unused-disable-directives --resolve-plugins-relative-to . --quiet packages/pob-test-typescript-package-in-monorepo",
+    "lint:eslint": "yarn ../.. run eslint --report-unused-disable-directives --resolve-plugins-relative-to . --quiet packages/pob-test-typescript-package-in-monorepo",
+    "test": "yarn ../../ run test -- packages/pob-test-typescript-package-in-monorepo",
     "watch": "yarn clean:build && rollup --config rollup.config.mjs --watch"
   },
-  "prettier": {
-    "trailingComma": "all",
-    "singleQuote": true,
-    "arrowParens": "always"
-  },
+  "prettier": "@pob/root/prettier-config",
   "pob": {
     "babelEnvs": [
       {
         "target": "node",
-        "version": "14",
-        "formats": [
-          "es"
-        ]
+        "version": "16"
       }
     ],
     "entries": [
@@ -52,8 +45,8 @@
     "pob-test-package-in-monorepo": "^2.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.19.3",
-    "pob-babel": "33.5.0",
+    "@babel/core": "7.20.2",
+    "pob-babel": "35.3.0",
     "typescript": "4.9.3"
   }
 }

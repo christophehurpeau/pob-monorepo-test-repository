@@ -17,9 +17,7 @@
   },
 
   "references": [
-    {
-      "path": "packages/pob-test-typescript-package-in-monorepo/tsconfig.build.json"
-    }
+    { "path": "packages/pob-test-typescript-package-in-monorepo/tsconfig.json" }
   ],
 
   "typedocOptions": {
