@@ -30,4 +30,4 @@ jobs:
           git -c user.name="Christophe Hurpeau" \
             -c user.email="christophehurpeau@users.noreply.github.com" \
             commit -m "chore: update yarn.lock for release-please PR" --author="github-actions[bot] <actions@github.com>"
-          git push
+          git push --no-verify origin "${BRANCH_NAME}"
