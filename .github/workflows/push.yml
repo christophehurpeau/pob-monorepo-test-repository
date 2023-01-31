@@ -41,17 +41,10 @@ jobs:
         run: yarn run lint:eslint
         if: startsWith(matrix.node-version, '18.')
 
-      - name: Generate Test Coverage
-        run: yarn run test --coverage --coverageReporters=json --coverageReporters=text
-        if: startsWith(matrix.node-version, '18.')
+      - name: Test
+        run: yarn run test
         env:
           CI: true
-
-      - name: Send results to codecov
-        uses: codecov/codecov-action@v3
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-        if: startsWith(matrix.node-version, '18.')
 
       - name: Check nothing was forgotten before commit
         if: startsWith(matrix.node-version, '18.')

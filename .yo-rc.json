@@ -11,7 +11,7 @@
     "monorepo": {
       "ci": true,
       "testing": true,
-      "codecov": true,
+      "codecov": false,
       "documentation": true,
       "typescript": true,
       "eslint": true,
