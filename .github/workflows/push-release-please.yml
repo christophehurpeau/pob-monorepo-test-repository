@@ -31,3 +31,5 @@ jobs:
             -c user.email="christophehurpeau@users.noreply.github.com" \
             commit -m "chore: update yarn.lock for release-please PR" --author="github-actions[bot] <actions@github.com>"
           git push --no-verify origin "${BRANCH_NAME}"
+        env:
+          BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
