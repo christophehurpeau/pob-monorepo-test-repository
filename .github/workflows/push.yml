@@ -55,6 +55,5 @@ jobs:
         id: release
         with:
           token: ${{ secrets.GH_TOKEN }}
-          package-name: release-please-action
           release-type: node
-          plugins: node-workspace
+          package-name: release-please-action

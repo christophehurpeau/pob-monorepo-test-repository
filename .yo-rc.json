@@ -12,7 +12,7 @@
       "ci": true,
       "testing": true,
       "codecov": false,
-      "documentation": true,
+      "documentation": false,
       "typescript": true,
       "eslint": true,
       "packageNames": [
