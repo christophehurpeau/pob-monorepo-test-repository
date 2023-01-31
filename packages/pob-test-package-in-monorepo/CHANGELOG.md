@@ -1,5 +1,18 @@
 # Changelog
 
+## [3.0.0](https://github.com/christophehurpeau/pob-monorepo-test-repository/compare/pob-test-package-in-monorepo-v2.0.0...pob-test-package-in-monorepo-v3.0.0) (2023-01-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* nothing changed
+
+### Features
+
+* try another breaking change ([bf73a0c](https://github.com/christophehurpeau/pob-monorepo-test-repository/commit/bf73a0ced119ef95098fec2399bdd5435e914105))
+* update name to John ([23d7c73](https://github.com/christophehurpeau/pob-monorepo-test-repository/commit/23d7c73561f46001bd84f81c40f128cd2ffd8770))
+* update name to Johnny ([c5948a7](https://github.com/christophehurpeau/pob-monorepo-test-repository/commit/c5948a7a6a40bf9c09434a9a42ece2f1a18a88b5))
+
 ## [2.0.0](https://github.com/christophehurpeau/pob-monorepo-test-repository/compare/pob-test-package-in-monorepo-v1.2.0...pob-test-package-in-monorepo-v2.0.0) (2022-04-30)
 
 
