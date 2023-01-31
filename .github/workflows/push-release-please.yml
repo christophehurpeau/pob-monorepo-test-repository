@@ -3,7 +3,7 @@ name: Commit changes on release-please branch
 on:
   push:
     branches:
-      - 'release-please--branches--**'
+      - "release-please--branches--**"
 
 jobs:
   run-install-and-commit-modified-files:
