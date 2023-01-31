@@ -1,2 +1,2 @@
 /* Testing fake breaking change */
-export default 'John';
+export default 'Johnny';
