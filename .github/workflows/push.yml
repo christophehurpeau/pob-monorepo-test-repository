@@ -59,3 +59,6 @@ jobs:
 
       - run: echo "A release was created."
         if: ${{ steps.release.outputs.releases_created }}
+
+      - run: echo "A release was created."
+        if: ${{ steps.release.outputs.release_created }}
