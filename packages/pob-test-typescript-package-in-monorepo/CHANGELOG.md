@@ -6,6 +6,13 @@
   * dependencies
     * pob-test-package-in-monorepo bumped from ^1.0.0 to ^1.1.0
 
+## [2.2.0](https://github.com/christophehurpeau/pob-monorepo-test-repository/compare/pob-test-typescript-package-in-monorepo-v2.1.0...pob-test-typescript-package-in-monorepo-v2.2.0) (2023-02-02)
+
+
+### Features
+
+* change Hello to Hi ([4320563](https://github.com/christophehurpeau/pob-monorepo-test-repository/commit/432056305eee2766d55cd35d846d5dc59d77438f))
+
 ## [2.1.0](https://github.com/christophehurpeau/pob-monorepo-test-repository/compare/pob-test-typescript-package-in-monorepo-v2.0.0...pob-test-typescript-package-in-monorepo-v2.1.0) (2023-01-31)
 
 
