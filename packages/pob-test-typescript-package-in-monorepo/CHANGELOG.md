@@ -1,10 +1,16 @@
 # Changelog
 
-### Dependencies
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-* The following workspace dependencies were updated
-  * dependencies
-    * pob-test-package-in-monorepo bumped from ^1.0.0 to ^1.1.0
+## [2.3.0](https://github.com/christophehurpeau/pob-monorepo-test-repository/compare/pob-test-typescript-package-in-monorepo@2.1.0...pob-test-typescript-package-in-monorepo@2.3.0) (2023-07-27)
+
+
+### Features
+
+* change Hello to Hi ([4320563](https://github.com/christophehurpeau/pob-monorepo-test-repository/commit/432056305eee2766d55cd35d846d5dc59d77438f))
+* change Hi to Hello ([ef8a3e1](https://github.com/christophehurpeau/pob-monorepo-test-repository/commit/ef8a3e1f08c2ca2c86da88bfea708cfb543feee7))
+
 
 ## [2.2.0](https://github.com/christophehurpeau/pob-monorepo-test-repository/compare/pob-test-typescript-package-in-monorepo-v2.1.0...pob-test-typescript-package-in-monorepo-v2.2.0) (2023-02-02)
 
