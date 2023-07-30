@@ -4,4 +4,5 @@ import name from 'pob-test-package-in-monorepo';
 /* Testing simple feature7 */
 /* Testing simple feature8 */
 /* Testing simple feature9 */
+/* Testing simple feature11 */
 export default `Hello ${name}!`;
