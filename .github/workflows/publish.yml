@@ -54,7 +54,7 @@ jobs:
           github.ref == 'refs/heads/main'
           && contains(github.event.inputs.dry-run, 'y') == false
         run: |
-          yarn version --create-release=github --bump-dependents-highest-as="${{ github.event.inputs.bump-dependents-highest-as }}" -m 'chore: release [skip ci]'
+          yarn version --create-release=github --bump-dependents-highest-as="${{ inputs.bump-dependents-highest-as }}" -m 'chore: release [skip ci]'
         env:
           HUSKY: 0
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
