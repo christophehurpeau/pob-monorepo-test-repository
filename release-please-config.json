@@ -1,8 +1,0 @@
-{
-  "plugins": ["node-workspace"],
-  "group-pull-request-title-pattern": "chore: release",
-  "packages": {
-    "packages/pob-test-package-in-monorepo": {},
-    "packages/pob-test-typescript-package-in-monorepo": {}
-  }
-}
