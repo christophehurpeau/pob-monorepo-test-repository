@@ -11,11 +11,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * test feat8 ([76e07e8](https://github.com/christophehurpeau/pob-monorepo-test-repository/commit/76e07e8b5997a9b449e423bdd11b5aee3e268b1c))
 
 
-# Changelog
-
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
-
 ## [v5.7.0](https://github.com/christophehurpeau/pob-monorepo-test-repository/compare/v5.6.0...v5.7.0) (2023-07-30)
 
 
