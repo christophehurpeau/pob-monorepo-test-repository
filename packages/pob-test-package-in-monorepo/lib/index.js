@@ -3,4 +3,5 @@
 /* Testing fake breaking change3 */
 /* Testing simple feature */
 /* Testing simple feature2 */
+/* Testing simple feature3 */
 export default 'John';
