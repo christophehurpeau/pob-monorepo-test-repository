@@ -5,4 +5,5 @@
 /* Testing simple feature2 */
 /* Testing simple feature3 */
 /* Testing simple feature4 */
+/* Testing simple feature5 */
 export default 'John';
