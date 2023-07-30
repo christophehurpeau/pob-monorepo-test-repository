@@ -5,11 +5,8 @@ on:
       dry-run:
         description: "Dry run? (yes/No)"
         required: true
-        type: choice
-        options:
-          - yes
-          - No
-        default: "No"
+        type: boolean
+        default: false
       bump-dependents-highest-as:
         description: "Bump dependents highest as? (major/minor/patch)"
         required: false
@@ -39,12 +36,12 @@ jobs:
       - name: New version (dry run)
         if: |
           github.ref == 'refs/heads/main'
-          && contains(github.event.inputs.dry-run, 'y')
+          && github.event.inputs.dry-run
         run: yarn version --dry-run
       - name: Configure Git user
         if: |
           github.ref == 'refs/heads/main'
-          && contains(github.event.inputs.dry-run, 'y') == false
+          && github.event.inputs.dry-run == false
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
@@ -52,9 +49,9 @@ jobs:
       - name: New version
         if: |
           github.ref == 'refs/heads/main'
-          && contains(github.event.inputs.dry-run, 'y') == false
+          && github.event.inputs.dry-run == false
         run: |
-          yarn version --create-release=github --bump-dependents-highest-as=${{ inputs.bump-dependents-highest-as }} -m 'chore: release [skip ci]\n\n%t'
+          yarn version --create-release=github --bump-dependents-highest-as=${{ inputs.bump-dependents-highest-as }} -m 'chore: release [skip ci]'
         env:
           HUSKY: 0
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
@@ -63,7 +60,7 @@ jobs:
       - uses: actions/setup-node@v3
         if: |
           github.ref == 'refs/heads/main'
-          && contains(github.event.inputs.dry-run, 'y') == false
+          && github.event.inputs.dry-run == false
         with:
           node-version: 18
           registry-url: "https://registry.npmjs.org"
@@ -71,6 +68,6 @@ jobs:
       - run: yarn workspaces foreach --no-private npm publish --tolerate-republish
         if: |
           github.ref == 'refs/heads/main'
-          && contains(github.event.inputs.dry-run, 'y') == false
+          && github.event.inputs.dry-run == false
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
