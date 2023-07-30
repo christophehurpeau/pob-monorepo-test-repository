@@ -5999,7 +5999,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"pob-test-package-in-monorepo@^5.3.0, pob-test-package-in-monorepo@workspace:packages/pob-test-package-in-monorepo":
+"pob-test-package-in-monorepo@^5.4.0, pob-test-package-in-monorepo@workspace:packages/pob-test-package-in-monorepo":
   version: 0.0.0-use.local
   resolution: "pob-test-package-in-monorepo@workspace:packages/pob-test-package-in-monorepo"
   dependencies:
@@ -6013,7 +6013,7 @@ __metadata:
   dependencies:
     "@babel/core": 7.22.9
     pob-babel: 36.2.0
-    pob-test-package-in-monorepo: ^5.3.0
+    pob-test-package-in-monorepo: ^5.4.0
     typescript: 5.1.6
   languageName: unknown
   linkType: soft
