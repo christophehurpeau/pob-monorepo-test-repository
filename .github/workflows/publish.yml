@@ -53,7 +53,7 @@ jobs:
 
       - name: Publish to npm
         run: |
-          echo "\nnpmAuthToken: $NODE_AUTH_TOKEN" >> ./.yarnrc.yml
+          echo "\n""npmAuthToken: $NODE_AUTH_TOKEN" >> ./.yarnrc.yml
           yarn workspaces foreach --no-private npm publish --tolerate-republish
         if: github.ref == 'refs/heads/main' && !inputs.dry-run
         env:
