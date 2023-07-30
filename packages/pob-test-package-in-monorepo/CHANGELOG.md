@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.0](https://github.com/christophehurpeau/pob-monorepo-test-repository/compare/pob-test-package-in-monorepo@5.2.1...pob-test-package-in-monorepo@5.3.0) (2023-07-30)
+
+
+### Features
+
+* test feat3 ([8aa0ea0](https://github.com/christophehurpeau/pob-monorepo-test-repository/commit/8aa0ea0a6091f5ebb8f1035c4b26f37c0dbe3d4b))
+
+
 ## [5.2.1](https://github.com/christophehurpeau/pob-monorepo-test-repository/compare/pob-test-package-in-monorepo@5.2.0...pob-test-package-in-monorepo@5.2.1) (2023-07-30)
 
 
