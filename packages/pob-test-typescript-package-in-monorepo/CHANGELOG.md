@@ -3,6 +3,11 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.10.0](https://github.com/christophehurpeau/pob-monorepo-test-repository/compare/v5.9.0...v5.10.0) (2023-07-30)
+
+Version bump for dependency: pob-test-package-in-monorepo
+
+
 ## [5.9.0](https://github.com/christophehurpeau/pob-monorepo-test-repository/compare/v5.8.0...v5.9.0) (2023-07-30)
 
 
