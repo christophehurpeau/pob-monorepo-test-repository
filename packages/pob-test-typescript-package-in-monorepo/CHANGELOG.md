@@ -3,6 +3,11 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.0](https://github.com/christophehurpeau/pob-monorepo-test-repository/compare/pob-test-typescript-package-in-monorepo@4.1.0...pob-test-typescript-package-in-monorepo@4.2.0) (2023-07-30)
+
+
+
+Version bump for dependency: pob-test-package-in-monorepo
 ## [4.1.0](https://github.com/christophehurpeau/pob-monorepo-test-repository/compare/pob-test-typescript-package-in-monorepo@4.0.0...pob-test-typescript-package-in-monorepo@4.1.0) (2023-07-30)
 
 
