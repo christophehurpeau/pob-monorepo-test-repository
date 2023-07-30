@@ -7,8 +7,8 @@ on:
         required: true
         type: choice
         options:
-          - y
-          - N
+          - yes
+          - No
         default: "N"
       bump-dependents-highest-as:
         description: "Bump dependents highest as? (major/minor/patch)"
