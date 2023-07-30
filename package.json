@@ -1,7 +1,7 @@
 {
   "name": "pob-monorepo-test-repository",
   "private": true,
-  "version": "v5.6.0",
+  "version": "v5.7.0",
   "author": "Christophe Hurpeau <christophe@hurpeau.com> (https://christophe.hurpeau.com)",
   "license": "ISC",
   "repository": "https://github.com/christophehurpeau/pob-monorepo-test-repository.git",
