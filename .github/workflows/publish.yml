@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       dry-run:
-        description: "Dry run? (yes/No)"
+        description: "Dry run"
         required: true
         type: boolean
         default: false
