@@ -1,6 +1,6 @@
 {
   "name": "pob-test-typescript-package-in-monorepo",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "keywords": [],
   "author": "Christophe Hurpeau <christophe@hurpeau.com> (https://christophe.hurpeau.com)",
   "license": "ISC",
@@ -43,7 +43,7 @@
     ]
   },
   "dependencies": {
-    "pob-test-package-in-monorepo": "^5.0.0"
+    "pob-test-package-in-monorepo": "^5.1.0"
   },
   "devDependencies": {
     "@babel/core": "7.22.9",
