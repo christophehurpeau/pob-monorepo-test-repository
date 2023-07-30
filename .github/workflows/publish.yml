@@ -3,13 +3,13 @@ on:
   workflow_dispatch:
     inputs:
       dry-run:
-        description: "Dry run? (y/N)"
+        description: "Dry run? (yes/No)"
         required: true
         type: choice
         options:
           - yes
           - No
-        default: "N"
+        default: "No"
       bump-dependents-highest-as:
         description: "Bump dependents highest as? (major/minor/patch)"
         required: false
@@ -54,7 +54,7 @@ jobs:
           github.ref == 'refs/heads/main'
           && contains(github.event.inputs.dry-run, 'y') == false
         run: |
-          yarn version --create-release=github --bump-dependents-highest-as=${{ inputs.bump-dependents-highest-as }} -m 'chore: release [skip ci]'
+          yarn version --create-release=github --bump-dependents-highest-as=${{ inputs.bump-dependents-highest-as }} -m 'chore: release [skip ci]\n\n%t'
         env:
           HUSKY: 0
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
