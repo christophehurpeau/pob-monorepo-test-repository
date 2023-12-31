@@ -1,4 +1,4 @@
-name: publish
+name: Release
 on:
   workflow_dispatch:
     inputs:
@@ -7,28 +7,23 @@ on:
         required: true
         type: boolean
         default: false
-      bump-dependents-highest-as:
-        description: "Bump dependents highest as"
-        required: false
-        type: choice
-        options:
-          - major
-          - minor
-          - patch
-        default: "major"
 
 jobs:
-  publish:
+  release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GH_TOKEN }}
-          fetch-depth: 0
+          fetch-depth: 200
+          fetch-tags: true
 
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
+
+      - name: Enable Corepack
+        run: corepack enable
 
       - name: Install Dependencies
         run: yarn install --immutable --immutable-cache
@@ -45,7 +40,7 @@ jobs:
       - name: New version
         if: github.ref == 'refs/heads/main' && !inputs.dry-run
         run: |
-          yarn version --create-release=github --bump-dependents-highest-as=${{ inputs.bump-dependents-highest-as }} -m 'chore: release %v [skip ci]'
+          yarn version --create-release=github  -m 'chore: release %v [skip ci]'
         env:
           HUSKY: 0
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
@@ -59,7 +54,7 @@ jobs:
           fi
           echo >> ./.yarnrc.yml
           echo "npmAuthToken: $NODE_AUTH_TOKEN" >> ./.yarnrc.yml
-          yarn workspaces foreach --no-private npm publish --tolerate-republish
+          yarn workspaces foreach --all --parallel --no-private npm publish --tolerate-republish
         if: github.ref == 'refs/heads/main' && !inputs.dry-run
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

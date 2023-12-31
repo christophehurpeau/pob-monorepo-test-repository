@@ -4,10 +4,17 @@
   "keywords": [],
   "author": "Christophe Hurpeau <christophe@hurpeau.com> (https://christophe.hurpeau.com)",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/christophehurpeau/pob-monorepo-test-repository.git",
+    "directory": "packages/pob-test-typescript-package-in-monorepo"
+  },
+  "homepage": "https://github.com/christophehurpeau/pob-monorepo-test-repository",
   "type": "module",
   "engines": {
     "node": ">=18.12.0"
   },
+  "sideEffects": false,
   "main": "./dist/index-node18.mjs",
   "types": "./dist/definitions/index.d.ts",
   "exports": {
@@ -19,7 +26,10 @@
       }
     }
   },
-  "sideEffects": false,
+  "files": [
+    "src",
+    "dist"
+  ],
   "scripts": {
     "build": "yarn clean:build && rollup --config rollup.config.mjs && yarn run build:definitions",
     "build:definitions": "tsc -p tsconfig.json",
@@ -30,7 +40,6 @@
     "test": "yarn ../../ run test -- packages/pob-test-typescript-package-in-monorepo",
     "watch": "yarn clean:build && rollup --config rollup.config.mjs --watch"
   },
-  "prettier": "@pob/root/prettier-config",
   "pob": {
     "babelEnvs": [
       {
@@ -42,12 +51,13 @@
       "index"
     ]
   },
+  "prettier": "@pob/root/prettier-config",
   "dependencies": {
     "pob-test-package-in-monorepo": "^5.6.0"
   },
   "devDependencies": {
     "@babel/core": "7.23.7",
-    "pob-babel": "36.2.0",
+    "pob-babel": "38.0.2",
     "typescript": "5.3.3"
   }
 }
