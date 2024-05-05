@@ -1305,15 +1305,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pob/rollup@npm:1.1.0":
-  version: 1.1.0
-  resolution: "@pob/rollup@npm:1.1.0"
+"@pob/rollup@npm:1.1.1":
+  version: 1.1.1
+  resolution: "@pob/rollup@npm:1.1.1"
   dependencies:
     rollup: "npm:3.29.4"
   bin:
     pob-rollup-clean-out: ./bin/pob-rollup-clean-out.js
     rollup: ./bin/rollup.cjs
-  checksum: 10/8ad51fd9c0b7f07c20753626398c024470026ba39471333ca7c78c48cd1819a7762befcf58dc08d402325cf00b07ff44aeefb4da8655dc85c58981a7c2f4057a
+  checksum: 10/6f4a3bcf7a61604530fcd349254b2405dd495736b8c84c3259b30e9940e18d524c30f35d14d6194ddaba6d891e8949b5194c903aa219f1a17ad3f7dbfc2b7e51
   languageName: node
   linkType: hard
 
@@ -2154,10 +2154,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-fix-class-properties-uninitialized@npm:7.2.2":
-  version: 7.2.2
-  resolution: "babel-plugin-fix-class-properties-uninitialized@npm:7.2.2"
-  checksum: 10/fad03adc67b242f6238b960478e9baa00efe1f0d394c9e3d003b06dc5a3278c24123176c6f20d5d32802c91b014fb61a57f6668d6056ad2295a9c456e07e37b9
+"babel-plugin-fix-class-properties-uninitialized@npm:7.2.3":
+  version: 7.2.3
+  resolution: "babel-plugin-fix-class-properties-uninitialized@npm:7.2.3"
+  checksum: 10/c3dabe2ca3a10c09cebc76f655999f3422f7202967a7cc155b8fd72057eadd702067bca4d22dd0fa84a0ff1a465055fe18b2ec614721c28e4d9455e6811069af
   languageName: node
   linkType: hard
 
@@ -2327,20 +2327,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-preset-pob-env@npm:11.1.2":
-  version: 11.1.2
-  resolution: "babel-preset-pob-env@npm:11.1.2"
+"babel-preset-pob-env@npm:11.1.3":
+  version: 11.1.3
+  resolution: "babel-preset-pob-env@npm:11.1.3"
   dependencies:
     "@babel/plugin-proposal-nullish-coalescing-operator": "npm:^7.18.6"
     "@babel/plugin-proposal-optional-chaining": "npm:^7.21.0"
     "@babel/plugin-transform-modules-commonjs": "npm:^7.23.0"
     "@babel/preset-typescript": "npm:^7.23.2"
     babel-plugin-discard-module-references: "npm:^1.1.2"
-    babel-plugin-fix-class-properties-uninitialized: "npm:7.2.2"
+    babel-plugin-fix-class-properties-uninitialized: "npm:7.2.3"
     babel-preset-optimizations: "npm:^2.0.0"
   peerDependencies:
     "@babel/core": ^7.23.2
-  checksum: 10/5f456cc50db105314874337e8d5e3c5f27b2270e1ee2ffee927fa69181f0a14a96ff110cef228fd6b790a2027282b9c88d180d3c2d9198d2928e3064a9051ffd
+  checksum: 10/6ce0e63e118d9ad64ef44daed49fdd53881bc695187f16f0fb8873c521d97493199ece9550777950fc59d46ffa3dcb810aa5949c8446c875a8a2ebd0fb92b22c
   languageName: node
   linkType: hard
 
@@ -5954,18 +5954,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pob-babel@npm:38.1.2":
-  version: 38.1.2
-  resolution: "pob-babel@npm:38.1.2"
+"pob-babel@npm:38.1.3":
+  version: 38.1.3
+  resolution: "pob-babel@npm:38.1.3"
   dependencies:
     "@babel/core": "npm:^7.23.2"
     "@babel/plugin-transform-runtime": "npm:7.24.3"
-    "@pob/rollup": "npm:1.1.0"
+    "@pob/rollup": "npm:1.1.1"
     "@rollup/plugin-babel": "npm:6.0.4"
     "@rollup/plugin-json": "npm:6.1.0"
     "@rollup/plugin-node-resolve": "npm:15.2.3"
     "@rollup/plugin-run": "npm:3.0.2"
-    babel-preset-pob-env: "npm:11.1.2"
+    babel-preset-pob-env: "npm:11.1.3"
     rollup: "npm:3.29.4"
     rollup-config-external-dependencies: "npm:^3.0.0"
     semver: "npm:^7.3.7"
@@ -5979,7 +5979,7 @@ __metadata:
   bin:
     pob-babel-clean-out: ./bin/pob-babel-clean-out.js
     rollup: ./bin/rollup.cjs
-  checksum: 10/7628c106353719ad326a6335030eb6fcd0e45bc93875a7fe201ea98d6942e0467ec2084a1b15b417f828521dd9f4d90da8c2af27abde0994ce7e0a57dc0a663f
+  checksum: 10/d9c8b2c11436a4939f9e3fcec2bbddfa7f964cd8bb558e4e34c5146693af2f96df8a014b9a89518d80f44385217ce29eb9a795d9e155cf431efb429489ae8dec
   languageName: node
   linkType: hard
 
@@ -6003,7 +6003,7 @@ __metadata:
     check-package-dependencies: "npm:7.1.1"
     eslint: "npm:8.57.0"
     jest: "npm:29.7.0"
-    pob-babel: "npm:38.1.2"
+    pob-babel: "npm:38.1.3"
     typescript: "npm:5.4.5"
   languageName: unknown
   linkType: soft
@@ -6021,7 +6021,7 @@ __metadata:
   resolution: "pob-test-typescript-package-in-monorepo@workspace:packages/pob-test-typescript-package-in-monorepo"
   dependencies:
     "@babel/core": "npm:7.24.5"
-    pob-babel: "npm:38.1.2"
+    pob-babel: "npm:38.1.3"
     pob-test-package-in-monorepo: "npm:^5.6.0"
     typescript: "npm:5.4.5"
   languageName: unknown
