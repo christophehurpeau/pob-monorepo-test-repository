@@ -22,7 +22,7 @@ npm install --save pob-test-package-in-monorepo
 ## Usage
 
 ```js
-import pobTestPackageInMonorepo from 'pob-test-package-in-monorepo';
+import pobTestPackageInMonorepo from "pob-test-package-in-monorepo";
 
 console.log(pobTestPackageInMonorepo);
 ```
