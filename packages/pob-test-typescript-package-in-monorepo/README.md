@@ -18,7 +18,7 @@ npm install --save pob-test-typescript-package-in-monorepo
 ## Usage
 
 ```js
-import pobTestTypescriptPackageInMonorepo from 'pob-test-typescript-package-in-monorepo';
+import pobTestTypescriptPackageInMonorepo from "pob-test-typescript-package-in-monorepo";
 
 console.log(pobTestTypescriptPackageInMonorepo);
 ```
