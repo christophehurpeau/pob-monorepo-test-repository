@@ -7,4 +7,4 @@
 /* Testing simple feature4 */
 /* Testing simple feature5 */
 /* Testing simple feature10 */
-export default 'John';
+export default "John";

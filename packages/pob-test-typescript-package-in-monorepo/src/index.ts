@@ -1,4 +1,4 @@
-import name from 'pob-test-package-in-monorepo';
+import name from "pob-test-package-in-monorepo";
 
 /* Testing simple feature6 */
 /* Testing simple feature7 */
