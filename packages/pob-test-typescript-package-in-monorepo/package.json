@@ -59,6 +59,6 @@
   "devDependencies": {
     "@babel/core": "7.24.5",
     "pob-babel": "40.0.0",
-    "typescript": "5.5.3"
+    "typescript": "5.5.4"
   }
 }
