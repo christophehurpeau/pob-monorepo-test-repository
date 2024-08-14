@@ -36,7 +36,7 @@
     "clean": "yarn clean:build",
     "clean:build": "pob-babel-clean-out dist",
     "lint": "yarn run lint:eslint",
-    "lint:eslint": "yarn ../.. run eslint --report-unused-disable-directives --resolve-plugins-relative-to . --quiet packages/pob-test-typescript-package-in-monorepo",
+    "lint:eslint": "yarn ../.. run eslint --quiet packages/pob-test-typescript-package-in-monorepo",
     "test": "yarn ../../ run test -- packages/pob-test-typescript-package-in-monorepo",
     "watch": "yarn clean:build && rollup --config rollup.config.mjs --watch"
   },
@@ -57,8 +57,8 @@
     "pob-test-package-in-monorepo": "^5.6.0"
   },
   "devDependencies": {
-    "@babel/core": "7.24.5",
-    "pob-babel": "40.0.1",
+    "@babel/core": "7.25.2",
+    "pob-babel": "41.0.0",
     "typescript": "5.5.4"
   }
 }
