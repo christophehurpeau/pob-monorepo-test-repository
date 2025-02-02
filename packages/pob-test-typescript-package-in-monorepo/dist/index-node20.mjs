@@ -9,4 +9,4 @@ import name from 'pob-test-package-in-monorepo';
 const index = `Hello ${name}!`;
 
 export { index as default };
-//# sourceMappingURL=index-node18.mjs.map
+//# sourceMappingURL=index-node20.mjs.map
