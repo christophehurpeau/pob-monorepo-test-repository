@@ -410,19 +410,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-runtime@npm:7.25.9":
-  version: 7.25.9
-  resolution: "@babel/plugin-transform-runtime@npm:7.25.9"
+"@babel/plugin-transform-runtime@npm:7.26.8":
+  version: 7.26.8
+  resolution: "@babel/plugin-transform-runtime@npm:7.26.8"
   dependencies:
     "@babel/helper-module-imports": "npm:^7.25.9"
-    "@babel/helper-plugin-utils": "npm:^7.25.9"
+    "@babel/helper-plugin-utils": "npm:^7.26.5"
     babel-plugin-polyfill-corejs2: "npm:^0.4.10"
     babel-plugin-polyfill-corejs3: "npm:^0.10.6"
     babel-plugin-polyfill-regenerator: "npm:^0.6.1"
     semver: "npm:^6.3.1"
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: 10c0/888a4998ba0a2313de347954c9a8dfeccbff0633c69d33aee385b8878eba2b429dbfb00c3cc04f6bca454b9be8afa01ebbd73defb7fbbb6e2d3086205c07758b
+  checksum: 10c0/e206206fee262d2200763e6c427b27ca8a7a40a967dfe52f984f07a225952be0990fcce0acae6cee63fe92f5cadc94bb336fae2f3d687f0f2fcd2dadaf33029a
   languageName: node
   linkType: hard
 
@@ -2720,9 +2720,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-preset-pob-env@npm:15.1.0":
-  version: 15.1.0
-  resolution: "babel-preset-pob-env@npm:15.1.0"
+"babel-preset-pob-env@npm:15.2.0":
+  version: 15.2.0
+  resolution: "babel-preset-pob-env@npm:15.2.0"
   dependencies:
     "@babel/plugin-transform-modules-commonjs": "npm:^7.26.3"
     "@babel/preset-typescript": "npm:^7.26.0"
@@ -2731,7 +2731,7 @@ __metadata:
     babel-preset-optimizations: "npm:^2.0.0"
   peerDependencies:
     "@babel/core": ^7.23.2
-  checksum: 10c0/8bbe11bbcfdcbe598bf30d39ae0c4625f1b0de2e71ad3f4c0c5b691ee4a80174cdfb8edb0bdc1c5be2ff043ed1bc635ac5412d8bdc408965bcb22e1bb6b20442
+  checksum: 10c0/af05d520e3c858220f522e7fc9effac8bd567548f1a83b62abcd59553c19b52fcf691c149560b6f428691b53a9766a7b3b23f8684cc58c1882bcbc6363a72167
   languageName: node
   linkType: hard
 
@@ -6912,18 +6912,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pob-babel@npm:43.1.0":
-  version: 43.1.0
-  resolution: "pob-babel@npm:43.1.0"
+"pob-babel@npm:43.2.0":
+  version: 43.2.0
+  resolution: "pob-babel@npm:43.2.0"
   dependencies:
     "@babel/core": "npm:^7.26.7"
-    "@babel/plugin-transform-runtime": "npm:7.25.9"
+    "@babel/plugin-transform-runtime": "npm:7.26.8"
     "@pob/rollup": "npm:6.1.0"
     "@rollup/plugin-babel": "npm:6.0.4"
     "@rollup/plugin-json": "npm:6.1.0"
     "@rollup/plugin-node-resolve": "npm:16.0.0"
     "@rollup/plugin-run": "npm:3.1.0"
-    babel-preset-pob-env: "npm:15.1.0"
+    babel-preset-pob-env: "npm:15.2.0"
     rollup: "npm:4.33.0"
     rollup-config-external-dependencies: "npm:^3.0.1"
     semver: "npm:^7.3.7"
@@ -6937,7 +6937,7 @@ __metadata:
   bin:
     pob-babel-clean-out: ./bin/pob-babel-clean-out.js
     rollup: ./bin/rollup.cjs
-  checksum: 10c0/0e4afd74c81105e3f0f406b6f22d52764112efa761351461799d1ad6c4beb233247f380009a2e42457b2f8109f3bd39dfc7345d18482d9fb578bb069e5adc939
+  checksum: 10c0/28edd6663a3897e0801ef59c3a23b9e8e7403b63c509d5751c6950618da6a6de2be480bf37a9013fcbe13ba56b32ef54de6953514f807f8c3b093b0abe5acccc
   languageName: node
   linkType: hard
 
@@ -6961,7 +6961,7 @@ __metadata:
     check-package-dependencies: "npm:9.1.0"
     eslint: "npm:9.19.0"
     jest: "npm:29.7.0"
-    pob-babel: "npm:43.1.0"
+    pob-babel: "npm:43.2.0"
     typescript: "npm:5.7.3"
   languageName: unknown
   linkType: soft
@@ -6979,7 +6979,7 @@ __metadata:
   resolution: "pob-test-typescript-package-in-monorepo@workspace:packages/pob-test-typescript-package-in-monorepo"
   dependencies:
     "@babel/core": "npm:7.26.7"
-    pob-babel: "npm:43.1.0"
+    pob-babel: "npm:43.2.0"
     pob-test-package-in-monorepo: "npm:^5.6.0"
     typescript: "npm:5.7.3"
   languageName: unknown
