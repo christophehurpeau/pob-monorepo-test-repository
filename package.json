@@ -7,7 +7,7 @@
   "repository": "https://github.com/christophehurpeau/pob-monorepo-test-repository.git",
   "homepage": "https://github.com/christophehurpeau/pob-monorepo-test-repository",
   "type": "module",
-  "packageManager": "yarn@4.6.0",
+  "packageManager": "yarn@4.7.0",
   "engines": {
     "node": ">=20.9.0"
   },
