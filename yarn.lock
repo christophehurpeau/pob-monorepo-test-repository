@@ -6883,6 +6883,7 @@ __metadata:
     eslint: "npm:9.25.1"
     jest: "npm:29.7.0"
     pob-babel: "npm:43.4.0"
+    repository-check-dirty: "npm:10.0.0"
     typescript: "npm:5.8.3"
   languageName: unknown
   linkType: soft

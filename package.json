@@ -50,6 +50,7 @@
     "eslint": "9.25.1",
     "jest": "29.7.0",
     "pob-babel": "43.4.0",
+    "repository-check-dirty": "10.0.0",
     "typescript": "5.8.3"
   }
 }
